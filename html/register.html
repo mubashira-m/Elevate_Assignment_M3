@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-page</title>
+    <link rel="stylesheet" href="/css/cover-style.css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="Home.html">
+            <h1 id="title">Register</h1>
+            <div class="input-box">
+                <input id="username"type="text" placeholder="Name" required onkeyup="validateName()">
+                <i class='bx bxs-user'></i>
+                <br>
+                <span id="username-error"></span>
+            </div>
+             <div class="input-box">
+                <input id="useremail" type="email" placeholder="Email" required onkeyup="validateEmail()">
+                <i class='bx bxs-envelope' ></i>
+                <br>
+                <span id="email-error"></span>
+
+            </div>
+            <div class="input-box">
+                <input id="user-password" type="password" placeholder="Password" required onkeyup="validatePassword()">
+                <i class='bx bxs-lock-alt'></i>
+                <br>
+                <span id="password-error"></span>
+            </div>
+            <div class="input-box">
+                <input id="repeat-password"type="password" placeholder="Repeat-Password" required onkeyup="validateRepeat()">
+                <i class='bx bxs-lock-alt'></i>
+                <br>
+                <span id="repeat-error"></span>
+            </div>
+                
+                <button type="submit" class="btn" onclick="return validateForm()">Submit</button>
+                <span id="login-error" ></span>
+                <div class="register-link">
+                    <p>Allready have an account?<a href="/index.html">Login</a></p>
+                </div>
+           
+        </form>
+    </div>
+    <script src="/JS/script.js"></script>
+</body>
+</html>

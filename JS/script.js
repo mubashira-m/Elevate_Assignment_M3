@@ -68,7 +68,7 @@ function validatePassword(){
 
 function assessPasswordStrength(password) {
     
-    if (password.length < 8) {
+    if (password.length <= 8) {
         return 'weak';
     } else if (password.length < 12) {
         return 'medium';
